@@ -2,7 +2,7 @@
 $SecurePassword = ConvertTo-SecureString "Bootcamp2026!" -AsPlainText -Force
 
 # Create a list of names to import
-$UserList = @("John.Doe", "Jane.Smith", "Robert.Johnson", "Emily.Davis", "Michael.Brown")
+$UserList = @("Jorge.Lagos", "Adrian.Paredes", "Roberto.Chavez", "Fran.Gutierrez", "Jose.Barrera")
 
 # Loop through the list and create each user inside the IT OU
 foreach ($User in $UserList) {
