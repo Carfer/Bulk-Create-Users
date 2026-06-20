@@ -1,4 +1,4 @@
-# Define a secure initial password for the test users
+9# Define a secure initial password for the test users
 $SecurePassword = ConvertTo-SecureString "Bootcamp2026!" -AsPlainText -Force
 
 # Create a list of names to import
@@ -13,5 +13,7 @@ foreach ($User in $UserList) {
                -AccountPassword $SecurePassword `
                -ChangePasswordAtLogon $true `
                -Enabled $true
+
     
     Write-Host "Successfully created user: $User" -ForegroundColor Green
+}
